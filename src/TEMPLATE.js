@@ -14,12 +14,12 @@ import PinterestIcon from '@mui/icons-material/Twitter';
 // Data object that contains all of the data for the template.
 const data = {
     profile: {
-        name: "Sara Friends",
+        name: "Rahul Rajesh",
         address: "C Java Place, Lowell, MA 07646",
         avatar: "https://mui.com/static/images/avatar/1.jpg",
         contacts: [
-            { icon: PhoneIcon, label: "Phone", value: "(978) 123-4567" },
-            { icon: EmailIcon, label: "Email", value: "sara_friends@student.uml.edu" },
+            { icon: PhoneIcon, label: "Phone", value: "(774) 486-9335" },
+            { icon: EmailIcon, label: "Email", value: "rahul_rajesh@student.uml.edu" },
             { icon: HomeIcon, label: "Address", value: "123 Main St, City, Country" }
         ],
         skills: [
@@ -38,16 +38,10 @@ const data = {
         ],
         education: [
             {
-                degree: "M.S. in Computer Science",
-                date: "Anticipated May 20xx",
-                school: "University of Massachusetts Lowell - Lowell, MA",
-                gpa: "Overall GPA: 3.33, GPA in Major: 3.50"
-            },
-            {
                 degree: "B.S. in Computer Science",
-                date: "Anticipated May 20xx",
+                date: "Anticipated May 2025",
                 school: "University of Massachusetts Lowell - Lowell, MA",
-                gpa: "Overall GPA: 3.33, GPA in Major: 3.50"
+                gpa: "Overall GPA: NA, GPA in Major: NA"
             },
         ],
         experience: [
