@@ -9,6 +9,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import SnapchatIcon from '@mui/icons-material/Twitter';
 import PinterestIcon from '@mui/icons-material/Twitter';
+import GitHub from '@mui/icons-material/GitHub';
+import Handshake from '@mui/icons-material/Handshake';
+import { BiLogoJava, BiLogoJavascript } from 'react-icons/bi';
+import { SiSpring, SiMysql, SiGooglemaps } from 'react-icons/si';
+import { AiFillHtml5 } from 'react-icons/ai';
+import { DiCss3 } from 'react-icons/di';
 
 
 // Data object that contains all of the data for the template.
@@ -23,53 +29,44 @@ const data = {
             { icon: HomeIcon, label: "Address", value: "123 Main St, City, Country" }
         ],
         skills: [
-            { category: "Programming Languages:", skills: "C/C++, Java, Assembly" },
-            { category: "Scripting Languages:", skills: "Bash Shell, HTML" },
-            { category: "Operating Systems:", skills: "Unix/Linux, Mac OSX, Windows XP & Vista" },
-            { category: "Documentation:", skills: "MS Word, Excel, PowerPoint & Visio" },
+            { category: "Programming Languages:", skills: "Java, JavaScript, Python, C++" },
+            { category: "Frameworks Worked With:", skills: "ReactJS, Spring Boot, JUnit" },
+            { category: "Operating Systems:", skills: "Windows" },
         ],
         socialMedia: [
-            { icon: FacebookIcon },
-            { icon: InstagramIcon },
             { icon: LinkedInIcon },
-            { icon: TwitterIcon },
-            { icon: SnapchatIcon },
-            { icon: PinterestIcon },
+            { icon: GitHub },
+            { icon: Handshake },
         ],
         education: [
             {
+              degree: "Bachelor of Computer Science",
+                date: "Sep 2022 - April 2023",
+                school: "Dalhousie University - Halifax, NS, Canada",
+                gpa: "Overall GPA: 4.02/4.3, GPA in Major: NA"
+            },
+            {
                 degree: "B.S. in Computer Science",
-                date: "Anticipated May 2025",
-                school: "University of Massachusetts Lowell - Lowell, MA",
+                date: "Sept 2023 - Anticipated August 2025",
+                school: "University of Massachusetts Lowell - Lowell, MA (Transfer)",
                 gpa: "Overall GPA: NA, GPA in Major: NA"
             },
         ],
         experience: [
             {
-                title: "Front End Developer / w3schools.com",
-                date: "Jan 2015 - Current",
-                description: "Lorem ipsum dolor sit amet...",
+                title: "Simple Bank MySQL app with Spring REST API",
+                date: "Feb 2023 - March 2023",
+                description: "This Spring Boot REST API manages user data and login credentials, providing CRUD endpoints for users and logins. Information is stored in MySQL tables.",
+                link: "https://github.com/rajeshrah22/banking-app-databse-app",
+                icons: [ { icon: BiLogoJava }, { icon: SiSpring }, { icon: SiMysql } ]
             },
             {
-                title: "Computer Lab Monitor / University of Massachusetts Lowell",
-                date: "Jan 20xx - Present",
-                description: "Monitor lab activity for up to 50 users at a time. Perform basic hardware/software troubleshooting.",
-            },
-            {
-                title: "Technical Support Specialist / Commonwealth of Massachusetts, Information Technology Division",
-                date: "Summer 20xx",
-                description: "Supported and hosted state-wide agency systems and messaging services on platforms including HP Unix, Linux, MVS, and Windows Active Exchange. Assisted with server builds and maintenance. Reviewed, installed, set up, and assisted with active synching of BlackBerry mobile devices to Windows Email Exchange server.",
-            },
-            {
-                title: "Asperger’s Association of New England",
-                date: "Jun. 20xx - Aug. 20xx",
-                description: "Volunteered one day a week with data entry and basic financial accounting projects",
-            },
-            {
-                title: "Lifeguard",
-                date: "Summers 20xx – 20xx",
-                description: "YMCA, Lowell, MA",
-            },
+              title: "BusApp",
+              date: "Jan 2023 - Feb 2023",
+              description: "Started because I read a challenge. Trying to use the nextBus xml feed to get bus agency/routes data to display real time bus information with Google Maps API",
+              link: "https://github.com/rajeshrah22/BusApp",
+              icons: [ { icon: BiLogoJavascript }, { icon: AiFillHtml5 }, { icon: DiCss3 }, { icon: SiGooglemaps }]
+            }
         ],
     },
 

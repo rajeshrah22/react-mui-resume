@@ -83,7 +83,7 @@ export default function App({ data }) {
                 <Container component="main" maxWidth="lg">
                     <Tabs value={activeTab} onChange={handleTabChange} centered sx={{ mb: 2 }}>
                         <Tab label="Resume" />
-                        <Tab label="Updates" />
+                        {/*<Tab label="Updates" />*/}
                         {/* <Tab label="Social Media" /> */}
                     </Tabs>
                     <AnimatePresence mode='wait'>

@@ -117,7 +117,7 @@ export default function ResumePortfolio({ profile }) {
                     {/* Work Experience */}
                     <ResumeCard>
                         <Typography variant="h6" component="div">
-                            Work Experience
+                            Projects
                         </Typography>
                         <Box sx={{ mt: 2 }}>
                             {profile.experience.map((experience, index) => (
@@ -129,12 +129,18 @@ export default function ResumePortfolio({ profile }) {
                                             {experience.description}
                                         </Typography>
                                     </Box>
+                                    <Box sx={{ mb: 3, textAlign: "left" }}>
+                                      {experience.icons.map((tech, index) => (
+                                        <IconButton color="primary" key={index} size='large'>
+                                          <tech.icon />
+                                        </IconButton>
+                                      ))}
+                                    </Box>
 
                                     {/* Divider but not for single or last item */}
                                     {index !== profile.experience.length - 1 && (
                                         <Divider sx={{ mb: 2 }} />
                                     )}
-
                                 </React.Fragment>
                             ))}
                         </Box>
