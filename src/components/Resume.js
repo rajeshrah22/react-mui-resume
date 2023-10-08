@@ -34,9 +34,6 @@ export default function ResumePortfolio({ profile }) {
                             <Typography variant="h5" component="div" sx={{ mt: 2 }}>
                                 {profile.name}
                             </Typography>
-                            <Typography color="text.secondary" sx={{ mt: 1 }}>
-                                {profile.address}
-                            </Typography>
                             {/* ... other personal information */}
                         </Box>
 
@@ -74,7 +71,7 @@ export default function ResumePortfolio({ profile }) {
                         </Typography>
                         <Box sx={{ mt: 2, textAlign: 'center' }}>
                             {profile.socialMedia.map((media, index) => (
-                                <IconButton color="primary" key={index}>
+                                <IconButton color="primary" key={index} href={media.url} target="_blank">
                                     <media.icon />
                                 </IconButton>
                             ))}
@@ -129,7 +126,7 @@ export default function ResumePortfolio({ profile }) {
                                             {experience.description}
                                         </Typography>
                                     </Box>
-                                    <Box sx={{ mb: 3, textAlign: "left" }}>
+                                    <Box sx={{ mb: 0.5, textAlign: "left" }}>
                                       {experience.icons.map((tech, index) => (
                                         <IconButton color="primary" key={index} size='large'>
                                           <tech.icon />

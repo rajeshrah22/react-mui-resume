@@ -22,11 +22,10 @@ const data = {
     profile: {
         name: "Rahul Rajesh",
         address: "C Java Place, Lowell, MA 07646",
-        avatar: "https://mui.com/static/images/avatar/1.jpg",
+        avatar: process.env.PUBLIC_URL + "/IMG_5707.png",
         contacts: [
             { icon: PhoneIcon, label: "Phone", value: "(774) 486-9335" },
             { icon: EmailIcon, label: "Email", value: "rahul_rajesh@student.uml.edu" },
-            { icon: HomeIcon, label: "Address", value: "123 Main St, City, Country" }
         ],
         skills: [
             { category: "Programming Languages:", skills: "Java, JavaScript, Python, C++" },
@@ -34,9 +33,9 @@ const data = {
             { category: "Operating Systems:", skills: "Windows" },
         ],
         socialMedia: [
-            { icon: LinkedInIcon },
-            { icon: GitHub },
-            { icon: Handshake },
+            { icon: LinkedInIcon, url: "https://linkedin.com/in/rahulrajesh0305"},
+            { icon: GitHub, url: "https://github.com/rajeshrah22"},
+            { icon: Handshake, url: "https://app.joinhandshake.com/stu/users/52417074" },
         ],
         education: [
             {
