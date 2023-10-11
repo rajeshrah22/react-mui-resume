@@ -13,6 +13,7 @@ import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import Link from '@mui/material/Link';
 
 // Local
 import ResumeCard from './ResumeCard';
@@ -146,8 +147,33 @@ export default function ResumePortfolio({ profile }) {
                     {/*Extra Curriculars/ Clubs*/}
                     <ResumeCard>
                       <Typography variant="h6" component="div">
-                            Projects
+                            Extracurriculars
                       </Typography>
+                      <Box sx={{ mt: 2 }}>
+                        {profile.extracurriculars.map((experience, index) =>(
+                          <React.Fragment key={index}>
+                            <Box sx={{ mb: 3 }}>
+                              <Link
+                                variant="subtitle1"
+                                href={experience.link}
+                                underline="hover"
+                                target="_blank"
+                              >
+                                {experience.title}
+                              </Link>
+                              <Typography variant="body2" color="text.secondary">{experience.date}</Typography>
+                              <Typography variant="body2" sx={{ mt: 1 }}>
+                                  {experience.description}
+                              </Typography>
+                            </Box>
+
+                            {/* Divider but not for single or last item */}
+                            {index !== profile.experience.length - 1 && (
+                                        <Divider sx={{ mb: 2 }} />
+                                    )}
+                          </React.Fragment>
+                        ))}
+                      </Box>
                     </ResumeCard>
 
                 </Grid>
