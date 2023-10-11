@@ -67,6 +67,20 @@ const data = {
               icons: [ { icon: BiLogoJavascript }, { icon: AiFillHtml5 }, { icon: DiCss3 }, { icon: SiGooglemaps }]
             }
         ],
+        extracurriculars: [
+          {
+            title: "UML Cloud Computing Club",
+            date: "Sep 2023 - Present",
+            description: "The purpose of the Cloud Computing Club is to provide the opportunity for students to explore and learn cloud computing technologies through fun and engaging activities. The club shall also invite guest speakers from industry and academia to further enhance its mission of building a strong student community centered on cloud computing technologies, and to promote student research and projects in the field.",
+            link: "https://github.com/UMLCloudComputing"
+          },
+          {
+            title: "BCI-Neuro Hackathon",
+            date: "March 22",
+            description: "Our team placed third in the hackathon by exploring the optimization of machine learning classifiers used in the BC speller. The BCI speller uses ECG waves to detect when someone is looking at a particular stimulus, and our team worked to improve the accuracy of the classifiers used in this system. In order to earn 3rd place, we had to present our findings in a engaging and professional manner.",
+            link: "https://www.linkedin.com/posts/rahulrajesh0305_bci-eeg-hyperscaning-activity-7041972543968165888-Gbq_?utm_source=share&utm_medium=member_desktop",
+          }
+        ]
     },
 
     posts: {

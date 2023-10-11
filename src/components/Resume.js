@@ -143,6 +143,13 @@ export default function ResumePortfolio({ profile }) {
                         </Box>
                     </ResumeCard>
 
+                    {/*Extra Curriculars/ Clubs*/}
+                    <ResumeCard>
+                      <Typography variant="h6" component="div">
+                            Projects
+                      </Typography>
+                    </ResumeCard>
+
                 </Grid>
  
             </Grid>
