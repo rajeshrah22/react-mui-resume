@@ -26,11 +26,42 @@ const data = {
         contacts: [
             { icon: PhoneIcon, label: "Phone", value: "(774) 486-9335" },
             { icon: EmailIcon, label: "Email", value: "rahul_rajesh@student.uml.edu" },
+            { icon: HomeIcon, label: "Location", value: "Westborough, MA"}
         ],
         skills: [
             { category: "Programming Languages:", skills: "Java, JavaScript, Python, C++" },
             { category: "Frameworks Worked With:", skills: "ReactJS, Spring Boot, JUnit" },
             { category: "Operating Systems:", skills: "Windows" },
+        ],
+        certifications: [
+          {
+            title: "AWS Certified Cloud Practitioner",
+            provider: "Amazon Web Services",
+            skills: "Knowledge of various AWS services\nValidation#: Z85WQSLC0JV1Q7W3",
+            date: "August 2023",
+            link: "https://aws.amazon.com/verification"
+          },
+          {
+            title: "Supervised Machine Learning: Regression and Classification",
+            provider: "Stanford Online X DeepLearningAI",
+            skills: "Binary Classification, Linear Regression, Logistic Regression",
+            date: "May 2023",
+            link: "https://www.coursera.org/account/accomplishments/verify/ZZ2NYEB78M22?utm_product=course"
+          },
+          {
+            title: "Advanced Learning Algorithms",
+            provider: "Stanford Online X DeepLearningAI",
+            skills: "Neural Networks, RandomForest, Boosted Trees",
+            date: "June 2023",
+            link: "https://www.coursera.org/account/accomplishments/verify/7UGTQJXHA3Q9?utm_product=course"
+          },
+          {
+            title: "PCEP – Certified Entry-Level Python Programme",
+            provider: "Python Institute",
+            skills: "Essentials of Python",
+            date: "August 2020",
+            link: "https://www.coursera.org/account/accomplishments/verify/7UGTQJXHA3Q9?utm_product=course"
+          },
         ],
         socialMedia: [
             { icon: LinkedInIcon, url: "https://linkedin.com/in/rahulrajesh0305"},
@@ -72,13 +103,15 @@ const data = {
             title: "UML Cloud Computing Club",
             date: "Sep 2023 - Present",
             description: "The purpose of the Cloud Computing Club is to provide the opportunity for students to explore and learn cloud computing technologies through fun and engaging activities. The club shall also invite guest speakers from industry and academia to further enhance its mission of building a strong student community centered on cloud computing technologies, and to promote student research and projects in the field.",
-            link: "https://github.com/UMLCloudComputing"
+            link: "https://github.com/UMLCloudComputing",
+            reference: ""
           },
           {
             title: "BCI-Neuro Hackathon",
             date: "March 22",
             description: "Our team placed third in the hackathon by exploring the optimization of machine learning classifiers used in the BC speller. The BCI speller uses ECG waves to detect when someone is looking at a particular stimulus, and our team worked to improve the accuracy of the classifiers used in this system. In order to earn 3rd place, we had to present our findings in a engaging and professional manner.",
             link: "https://www.linkedin.com/posts/rahulrajesh0305_bci-eeg-hyperscaning-activity-7041972543968165888-Gbq_?utm_source=share&utm_medium=member_desktop",
+            reference: ""
           }
         ]
     },

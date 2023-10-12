@@ -52,21 +52,7 @@ export default function ResumePortfolio({ profile }) {
                         </List>
                         <Divider sx={{ mb: 2 }} />
 
-                        {/* Skills */}
-                        <Typography variant="h6" component="div" sx={{ mt: 2 }}>
-                            Skills
-                        </Typography>
-                        <List component="nav" dense>
-                            {profile.skills.map((skill, index) => (
-                                <ListItemButton key={index}>
-                                    <ListItemText primary={skill.category} secondary={skill.skills} />
-                                </ListItemButton>
-                            ))}
-                        </List>
-                    </ResumeCard>
-
-                    {/* Social Media Links */}
-                    <ResumeCard>
+                        {/* Social Media Links */}
                         <Typography variant="h6" component="div" sx={{ textAlign: 'center' }}>
                             Social Media
                         </Typography>
@@ -77,6 +63,47 @@ export default function ResumePortfolio({ profile }) {
                                 </IconButton>
                             ))}
                         </Box>
+                    </ResumeCard>
+                    
+                    {/* Skills */}
+                    <ResumeCard>
+                      <Typography variant="h6" component="div" sx={{ mt: 2 }}>
+                              Skills
+                      </Typography>
+                      <List component="nav" dense>
+                          {profile.skills.map((skill, index) => (
+                              <ListItemButton key={index}>
+                                  <ListItemText primary={skill.category} secondary={skill.skills} />
+                              </ListItemButton>
+                          ))}
+                      </List>
+                    </ResumeCard>
+
+                    {/*Certifications*/}
+                    <ResumeCard>
+                        <Typography variant="h6" component="div" sx={{ mt: 2 }}>
+                            Certifications
+                        </Typography>
+                        {profile.certifications.map((cert, index) => (
+                          <React.Fragment key={index}>
+                          <Box sx={{ mb: 3 }}>
+                              <Link href={cert.link} underline='hover'target='_blank' variant="subtitle1">{cert.title}</Link>
+                              <Typography variant="body2" color="text.secondary">{cert.date}</Typography>
+                              <Typography variant="body2" sx={{ mt: 1 }}>
+                                  {cert.provider}
+                              </Typography>
+                              <Typography variant="body2" sx={{ mt: 1 }}>
+                                  {"Skills: " + cert.skills}
+                              </Typography>
+                          </Box>
+
+                          {/* Divider but not for single or last item */}
+                          {index !== profile.certifications.length - 1 && (
+                              <Divider sx={{ mb: 2 }} />
+                          )}
+
+                        </React.Fragment>
+                        ))}
                     </ResumeCard>
                 </Grid>
 
@@ -121,7 +148,7 @@ export default function ResumePortfolio({ profile }) {
                             {profile.experience.map((experience, index) => (
                                 <React.Fragment key={index}>
                                     <Box sx={{ mb: 3 }}>
-                                        <Typography variant="subtitle1">{experience.title}</Typography>
+                                        <Link href={experience.link} underline='hover' target='_blank' variant="subtitle1">{experience.title}</Link>
                                         <Typography variant="body2" color="text.secondary">{experience.date}</Typography>
                                         <Typography variant="body2" sx={{ mt: 1 }}>
                                             {experience.description}
